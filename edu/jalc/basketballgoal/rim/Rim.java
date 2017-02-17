@@ -1,34 +1,28 @@
 package edu.jalc.basketballgoal.rim;
 
-import edu.jalc.basketballgoal.rim.net.Net;
+import edu.jalc.basketballgoal.rim.RimNet;
+import edu.jalc.basketballgoal.rim.RimSize;
 
 public class Rim{
    
-   private final double diameter;
-   private double circumference;
-   private final Net net;
+   private final RimSize size;
+   private final RimNet net;
    
    private Rim(){
-      this.diameter = 0;
-      this.circumference = 0;
+      this.size = null;
       this.net = null;
    }
    
-   Rim(double diameter, double circumference, Net net){
-      this.diameter = diameter;
-      this.circumference = circumference;
+   Rim(RimSize size, RimNet net){
+      this.size = size;
       this.net = net;
    }
    
-   public double getDiameter(){
-      return this.diameter;
+   public RimSize getSize(){
+      return this.size;
    }
    
-   public double getCircumference(){
-      return this.circumference;
-   }
-   
-   public Net getNet(){
+   public RimNet getNet(){
       return this.net;
    }
 }

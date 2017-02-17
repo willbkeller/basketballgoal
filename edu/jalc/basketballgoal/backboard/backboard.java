@@ -1,34 +1,28 @@
 package edu.jalc.basketballgoal.backboard;
 
-import edu.jalc.basketballgoal.backboard.foampad.FoamPad;
+import edu.jalc.basketballgoal.backboard.BackboardPad;
+import edu.jalc.basketballgoal.backboard.BackboardSize;
 
 public class Backboard{
 
-   private final double width;
-   private final double height;
-   private final FoamPad foamPad;
+   private final BackboardSize size;
+   private final BackboardPad pad;
    
    private Backboard(){
-      this.width = 0;
-      this.height = 0;
-      this.foamPad = null;
+      this.size = null;
+      this.pad = null;
    }
    
-   Backboard(double width, double height, FoamPad foamPad){
-      this.width = width;
-      this.height = height;
-      this.foamPad = foamPad;
+   Backboard(BackboardSize size, BackboardPad pad){
+      this.size = size;
+      this.pad = pad;
    }
    
-   public double getWidth(){
-      return this.width;
+   public BackboardSize getSize(){
+      return this.size;
    }
    
-   public double getHeight(){
-      return this.height;
-   }
-   
-   public FoamPad getFoamPad(){
-      return this.foamPad;
+   public BackboardPad getPad(){
+      return this.pad;
    }
 } 

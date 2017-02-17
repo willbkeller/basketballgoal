@@ -1,16 +1,16 @@
-package edu.jalc.basketballgoal.backboard.foampad;
+package edu.jalc.basketballgoal.backboard;
 
-public class FoamPad{
+public class BackboardPad{
    
    private final double length;
    private final double width;
    
-   private FoamPad(){
+   private BackboardPad(){
       this.length = 0;
       this.width = 0;
    }
    
-   FoamPad(double length, double width){
+   BackboardPad(double length, double width){
       this.length = length;
       this.width = width;
    }

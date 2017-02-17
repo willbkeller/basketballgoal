@@ -1,16 +1,16 @@
-package edu.jalc.basketballgoal.rim.net;
+package edu.jalc.basketballgoal.rim;
 
-public class Net{
+public class RimNet{
 
    private final double length;
    private boolean attached;
    
-   Net(){
+   RimNet(){
       this.length = 0.0;
       this.attached = false;
    }
    
-   Net(double length){
+   RimNet(double length){
       this.length = length;
       this.attached = false;
    }
@@ -23,12 +23,12 @@ public class Net{
       return this.attached;
    }
    
-   public Net attach(){
+   public RimNet attach(){
       this.setAttached(true);
       return this;
    }
    
-   public Net detach(){
+   public RimNet detach(){
       this.setAttached(false);
       return this;
    }
