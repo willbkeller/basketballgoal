@@ -33,13 +33,11 @@ public class BasketballGoal{
       return this.rim;
    }
    
-   Backboard setBackboard(Backboard backboard){
+   private void setBackboard(Backboard backboard){
       this.backboard = backboard;
-      return backboard;
    }
    
-   Rim setRim(Rim rim){
+   public void setRim(Rim rim){
       this.rim = rim;
-      return rim;
    }
 }
