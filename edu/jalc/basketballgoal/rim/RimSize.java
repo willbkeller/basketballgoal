@@ -3,14 +3,14 @@ package edu.jalc.basketballgoal.rim;
 public class RimSize{
    
    private final double diameter;
-   private double circumference;
+   private final double circumference;
    
    private RimSize(){
       this.diameter = 0;
       this.circumference = 0;
    }
    
-   RimSize(double diameter, double circumference){
+   public RimSize(double diameter, double circumference){
       this.diameter = diameter;
       this.circumference = circumference;
    }

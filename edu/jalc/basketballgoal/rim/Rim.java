@@ -1,19 +1,19 @@
 package edu.jalc.basketballgoal.rim;
 
-import edu.jalc.basketballgoal.rim.RimNet;
+import edu.jalc.basketballgoal.rim.Net;
 import edu.jalc.basketballgoal.rim.RimSize;
 
 public class Rim{
    
-   private final RimSize size;
-   private final RimNet net;
+   private RimSize size;
+   private Net net;
    
    private Rim(){
       this.size = null;
       this.net = null;
    }
    
-   Rim(RimSize size, RimNet net){
+   public Rim(RimSize size, Net net){
       this.size = size;
       this.net = net;
    }
@@ -22,7 +22,17 @@ public class Rim{
       return this.size;
    }
    
-   public RimNet getNet(){
+   public Net getNet(){
       return this.net;
+   }
+   
+   Rim setSize(RimSize size){
+      this.size = size;
+      return this;
+   }
+   
+   Rim setNet(Net net){
+      this.net = net;
+      return this;
    }
 }

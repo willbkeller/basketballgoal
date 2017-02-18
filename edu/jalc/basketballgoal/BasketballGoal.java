@@ -1,4 +1,4 @@
-package edu.jalc.basketballgoal.goal;
+package edu.jalc.basketballgoal;
 
 import edu.jalc.basketballgoal.backboard.Backboard;
 import edu.jalc.basketballgoal.rim.Rim;
@@ -33,11 +33,13 @@ public class BasketballGoal{
       return this.rim;
    }
    
-   private void setBackboard(Backboard backboard){
+   BasketballGoal setBackboard(Backboard backboard){
       this.backboard = backboard;
+      return this;
    }
    
-   public void setRim(Rim rim){
+   BasketballGoal setRim(Rim rim){
       this.rim = rim;
+      return this;
    }
 }

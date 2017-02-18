@@ -1,19 +1,19 @@
 package edu.jalc.basketballgoal.backboard;
 
-import edu.jalc.basketballgoal.backboard.BackboardPad;
+import edu.jalc.basketballgoal.backboard.BasePad;
 import edu.jalc.basketballgoal.backboard.BackboardSize;
 
 public class Backboard{
 
-   private final BackboardSize size;
-   private final BackboardPad pad;
+   private BackboardSize size;
+   private BasePad pad;
    
-   private Backboard(){
+   Backboard(){
       this.size = null;
       this.pad = null;
    }
    
-   Backboard(BackboardSize size, BackboardPad pad){
+   public Backboard(BackboardSize size, BasePad pad){
       this.size = size;
       this.pad = pad;
    }
@@ -22,7 +22,17 @@ public class Backboard{
       return this.size;
    }
    
-   public BackboardPad getPad(){
+   public BasePad getPad(){
       return this.pad;
+   }
+   
+   Backboard setSize(BackboardSize size){
+      this.size = size;
+      return this;
+   }
+   
+   Backboard setPad(BasePad pad){
+      this.pad = pad;
+      return this;
    }
 } 
