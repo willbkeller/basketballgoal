@@ -15,7 +15,7 @@ public class BasketballGoal{
       this.rim = null;
    }
    
-   BasketballGoal(int height, Backboard backboard, Rim rim){
+   public BasketballGoal(int height, Backboard backboard, Rim rim){
       this.height = height;
       this.setBackboard(backboard);
       this.setRim(rim);

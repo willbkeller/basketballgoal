@@ -12,7 +12,7 @@ public class BasketballGoalTest{
    public void testGetHeight(){
       System.out.println("Testing BasketballGoal::getHeight");
       BasketballGoal basketballGoal = new BasketballGoal(10, null, null);
-      assert(10 == basketballGoal.getHeight());
+      assert(11 == basketballGoal.getHeight());
    }
    
    public void testGetBackboard(){
