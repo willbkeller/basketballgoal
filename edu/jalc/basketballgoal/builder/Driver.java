@@ -3,7 +3,7 @@ package edu.jalc.basketballgoal.builder;
 import java.util.ArrayList;
 import edu.jalc.basketballgoal.BasketballGoal;
 
-public class Builder{
+public class Driver{
 
    public static void main (String[] args){
    
