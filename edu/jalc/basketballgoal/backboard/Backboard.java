@@ -5,7 +5,7 @@ import edu.jalc.basketballgoal.backboard.BackboardSize;
 import edu.jalc.basketballgoal.interfaces.Breakable;
 import edu.jalc.basketballgoal.interfaces.Buzzable;
 
-public class Backboard{
+public class Backboard implements Breakable, Buzzable{
 
    private BackboardSize size;
    private BasePad pad;

@@ -5,7 +5,7 @@ import edu.jalc.basketballgoal.rim.Rim;
 import edu.jalc.basketballgoal.interfaces.Moveable;
 import edu.jalc.basketballgoal.interfaces.Extendable;
 
-public class BasketballGoal{
+public class BasketballGoal implements Moveable, Extendable{
 
    private final int height;
    private Backboard backboard;

@@ -5,7 +5,7 @@ import edu.jalc.basketballgoal.rim.RimSize;
 import edu.jalc.basketballgoal.interfaces.Breakable;
 import edu.jalc.basketballgoal.interfaces.Bendable;
 
-public class Rim{
+public class Rim implements Breakable, Bendable{
    
    private RimSize size;
    private Net net;
