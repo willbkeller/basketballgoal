@@ -2,6 +2,8 @@ package edu.jalc.basketballgoal.rim;
 
 import edu.jalc.basketballgoal.rim.Net;
 import edu.jalc.basketballgoal.rim.RimSize;
+import edu.jalc.basketballgoal.interfaces.Breakable;
+import edu.jalc.basketballgoal.interfaces.Bendable;
 
 public class Rim{
    
@@ -34,5 +36,13 @@ public class Rim{
    Rim setNet(Net net){
       this.net = net;
       return this;
+   }
+   
+   public void breaks(){
+      System.out.println("Rim breaks off of the goal");
+   }
+   
+   public void bend(){
+      System.out.println("The rim is bent");
    }
 }

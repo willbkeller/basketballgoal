@@ -2,6 +2,8 @@ package edu.jalc.basketballgoal;
 
 import edu.jalc.basketballgoal.backboard.Backboard;
 import edu.jalc.basketballgoal.rim.Rim;
+import edu.jalc.basketballgoal.interfaces.Moveable;
+import edu.jalc.basketballgoal.interfaces.Extendable;
 
 public class BasketballGoal{
 
@@ -41,5 +43,13 @@ public class BasketballGoal{
    BasketballGoal setRim(Rim rim){
       this.rim = rim;
       return this;
+   }
+   
+   public void move(){
+      System.out.println("Moved the Basketball Goal");
+   }
+   
+   public void extend(int height){
+      System.out.println("Extended the Basketball Goal to " + height + " feet");
    }
 }

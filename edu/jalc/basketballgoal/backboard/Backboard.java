@@ -2,6 +2,8 @@ package edu.jalc.basketballgoal.backboard;
 
 import edu.jalc.basketballgoal.backboard.BasePad;
 import edu.jalc.basketballgoal.backboard.BackboardSize;
+import edu.jalc.basketballgoal.interfaces.Breakable;
+import edu.jalc.basketballgoal.interfaces.Buzzable;
 
 public class Backboard{
 
@@ -34,5 +36,13 @@ public class Backboard{
    Backboard setPad(BasePad pad){
       this.pad = pad;
       return this;
+   }
+   
+   public void breaks(){
+      System.out.println("Shattered the Backboard");
+   }
+   
+   public void buzz(){
+      System.out.println("Backboard buzzes at the end of the half");
    }
 } 
